@@ -36,7 +36,27 @@
  </configuration>
 
  </plugin>
-
+ <plugin>  
+   <groupId>org.codehaus.mojo</groupId>  
+   <artifactId>exec-maven-plugin</artifactId>  
+   <version>1.5.0</version>  
+   <executions>  
+    <execution>  
+     <phase>test</phase>  
+     <goals>  
+      <goal>java</goal>  
+     </goals>  
+     <configuration>  
+      <mainClass>CRMAutomationMaven.CRMAutomationMaven.DriverClass</mainClass> 
+	<!-- 
+      <arguments>  
+       <argument>arg0</argument>  
+       <argument>arg1</argument>  
+      </arguments>  -->
+     </configuration>  
+    </execution>  
+   </executions>  
+  </plugin>  
  </plugins>
 
  </build>
