@@ -41,11 +41,12 @@
    <artifactId>exec-maven-plugin</artifactId>  
    <version>1.5.0</version>  
    <executions>  
-    <execution>  
+    <execution>
+    <!--   
      <phase>test</phase>  
      <goals>  
       <goal>java</goal>  
-     </goals>  
+     </goals>   -->
      <configuration>  
       <mainClass>CRMAutomationMaven.CRMAutomationMaven.DriverClass</mainClass> 
 	<!-- 
