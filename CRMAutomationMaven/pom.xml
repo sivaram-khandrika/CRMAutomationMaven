@@ -42,11 +42,11 @@
    <version>1.5.0</version>  
    <executions>  
     <execution>
-    <!--   
+       
      <phase>test</phase>  
      <goals>  
       <goal>java</goal>  
-     </goals>   -->
+     </goals> 
      <configuration>  
       <mainClass>CRMAutomationMaven.CRMAutomationMaven.DriverClass</mainClass> 
 	<!-- 
@@ -61,6 +61,7 @@
  </plugins>
 
  </build>
+
 
 
  <dependencies>
@@ -135,23 +136,31 @@
 
 	</dependency>
 
+
 	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-
 	<dependency>
-
-	<groupId>org.apache.maven.plugins</groupId>
-
-	<artifactId>maven-compiler-plugin</artifactId>
-
-	<version>3.6.1</version>
-
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <version>3.6.1</version>
 	</dependency>
-
+	
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-surefire-report-plugin</artifactId>
+	    <version>2.19.1</version>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+	<dependency>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>exec-maven-plugin</artifactId>
+	    <version>1.5.0</version>
+	</dependency>
 	
 
 	</dependencies>
 
- <ciManagement>
+ <!--  <ciManagement>
 
  <url>https://github.com/sivaram-khandrika/CRMAutomationMaven.git</url>
 
@@ -161,5 +170,5 @@
 
  <url>http://localhost:8080/job/Maven/</url>
 
- </scm>
+ </scm>-->
 </project>

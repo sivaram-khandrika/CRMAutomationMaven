@@ -127,7 +127,7 @@ public class CRMContactsModule {
 		}
 	}
 	public String createContact(GlobalMethods gm,String filePath,String moduleName,String subModuleName){
-		driver = gm.createWebDriver("Firefox");
+		driver = gm.createWebDriver("Chrome");
 		gm.navigateURL(driver, "https://okncrm2.crm8.dynamics.com");
 		System.out.println("Row Count in createAccount() is "+mRC); 
 		if (mRC ==1) {
